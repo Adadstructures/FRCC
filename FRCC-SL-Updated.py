@@ -104,7 +104,7 @@ plot_button = st.button("Plot Stress-Strain Curve")
 if plot_button:
     # Plotting the Stress-Strain Curve
     # Modulus values
-    f_o = unconfined_strength + (0.003*confinement_stress)
+    f_o = unconfined_strength
     Modulus_1 = concrete_modulus
     Modulus_2 = (st.session_state.predicted_strength - f_o)/st.session_state.predicted_strain
 
