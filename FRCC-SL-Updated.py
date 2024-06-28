@@ -153,3 +153,24 @@ if plot_button:
     st.write(f"Strength Enhancement: {st.session_state.strength_enhancement_ratio[0]:.3f}")
     st.write(f"Strain Enhancement: {st.session_state.strain_enhancement_ratio[0]:.3f}")
 
+# Adding a footer with contact information
+footer = """
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #6c757d;
+}
+</style>
+<div class="footer">
+    <p>© 2024 My Streamlit App. All rights reserved. |Temitope E. Dada, Guobin Gong, Jun Xia, Luigi Di Sarno | For Queries: <a href="mailto:T.Dada19@student.xjtlu.edu.cn">T.Dada19@student.xjtlu.edu.cn</a></p>
+</div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)
